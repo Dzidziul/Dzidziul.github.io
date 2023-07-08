@@ -6,6 +6,10 @@ window.addEventListener('resize', () => {
     if (window.innerWidth >= 700) navBar.classList.remove('mobile')
 })
 
+window.addEventListener('load', () => {
+    if (window.innerWidth <= 700) navBar.classList.add('mobile')
+})
+
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 700) navBar.classList.add('mobile')
 })
