@@ -1,0 +1,21 @@
+// 700px, 1000px, 1440px, 
+
+@mixin tablet-up {
+    @media screen and (min-width: 700px) {
+        @content
+    }
+};
+
+@mixin mobile {
+    @media screen and (max-width: 280px) {
+        @content
+    }
+};
+
+@mixin desktop-up {
+    @media screen and (min-width: 1000px){
+        @content
+    }
+};
+
+
